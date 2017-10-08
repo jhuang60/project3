@@ -2,6 +2,16 @@
 
 /* Base style */
 
+html{
+  font-size: 0.94444444444em; /* 17/18 = 0.94444444444 */
+  line-height: 1.44444444444em; /* 26/18 = 1.44444444444 */
+}
+body{
+  padding-top: 3.88888888889em; /* 70/18 = 3.88888888889 */
+  padding-left: 1.66666666667em; /* 30/18 = 1.66666666667 */
+  padding-right: 1.66666666667em; /* 30/18 = 1.66666666667 */
+}
+
 /* Setting type with a modular scale */
 
 /* Responsive media */
@@ -10,14 +20,29 @@ display: block;
 max-width: 100%;
 }
 /* Layout style */
+#menu {
+  position: absolute;
+  width: 100%;
+  background-color: yellow;
+  top: 0;
+  left: 0;
+}
+#menu li{
+  float: left;
+  width: 33.3333333333%;
+  background-color: orange;
+}
 #menu a {
-  text-decoration: none;
+  text-decoration: none; /* get rid of underlines */
+  display: block;
+  text-align: center;
+  width: 100%;
 }
 
 /* Modular style */
 #menu ul,
 #menu li{
-  list-style-type: none;
+  list-style-type: none; /* get rid of bullet points*/
 }
 
 /* State styles */
