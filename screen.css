@@ -1,9 +1,3 @@
-img {
-display: block;
-max-width: 100%;
-
-}
-
 /* Begin site style below */
 
 /* Base style */
@@ -11,9 +5,19 @@ max-width: 100%;
 /* Setting type with a modular scale */
 
 /* Responsive media */
-
+img {
+display: block;
+max-width: 100%;
+}
 /* Layout style */
+#menu a {
+  text-decoration: none;
+}
 
 /* Modular style */
+#menu ul,
+#menu li{
+  list-style-type: none;
+}
 
 /* State styles */
