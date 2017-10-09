@@ -27,11 +27,12 @@ h2,
 h3,
 p,
 ul {
-  padding-bottom: 0.9375em; /* 15/16 = 1.25 */
+  padding-bottom: 0.9375em; /* 15/16 = 0.9375 */
 }
 
 h1 {
   font-size: 2.8125em; /* 45/16 = 2.8125 */
+  line-height: 1.875em; /* 30/16 = 1.875*/
 }
 
 h2 {
@@ -102,17 +103,41 @@ img {
 
 /* State styles */
 
-@media screen and (min-width: 375px){
+@media screen and (min-width: 320px) and (max-width: 767px){
+  html {
+    font-size: 0.9375em; /* 15/16 = 0.9375*/
+    line-height: 1.25em; /* 20/16= 1.25*/
+  }
 
+  body {
+    padding-top: 3.75em; /* 60/16 = 3.75 */
+    padding-left: 2.1875em; /* 35/16 = 2.1875*/
+    padding-right: 2.1875em; /* 35/16 = 2.1875*/
+  }
+
+  h1,
+  h2,
+  h3,
+  p,
+  ul {
+    padding-bottom: 0.625em; /* 10/16 = 0.625*/
+  }
+
+  h1 {
+    font-size: 1.875em; /* 30/16 = 1.875*/
+  }
+
+  h2 {
+    font-size: 1.25em; /* 20/16 = 1.25*/
+  }
+  #menu a {
+    padding-top: 0.625em; /* 10/16 = 0.625*/
+    padding-bottom: 0.625em; /* 10/16 = 0.625*/
+  }
 
 }
 
 @media screen and (min-width: 768px){
-
-
-}
-
-@media screen and (min-width: 1224px){
 
 
 }
