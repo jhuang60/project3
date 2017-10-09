@@ -14,6 +14,8 @@ html {
   font-size: 1.1875em; /* 19/16 = 1.1875 */
   line-height: 1.38888888889em; /* 25/16 = 1.38888888889*/
   font-family: "Times New Roman", Times, serif;
+  background-image: url("images/paper.jpg");
+  background-repeat:repeat;
 }
 
 body {
@@ -59,6 +61,12 @@ li ul {
   list-style-type: square;
 }
 
+footer {
+  background-color: #ffcc99;
+  text-align: center;
+}
+
+
 
 /* Setting type with a modular scale */
 
@@ -72,16 +80,17 @@ img {
 
 #menu {
   position: absolute;
-  background-color: yellow;
   width: 100%;
   top: 0;
   left: 0;
+  padding-bottom: 10px;
+  background-color: #ff9933;
 }
 
 #menu li {
   float: left;
   width: 33.3333333333%;
-  background-color: orange;
+  background-color: #ffcc99;
 }
 
 #menu a {
@@ -89,7 +98,7 @@ img {
   display: block;
   text-align: center;
   width: 100%;
-  color: white;
+  color: #804000;
   padding-top: 0.8125em; /* 13/16 = 0.8125 */
   padding-bottom: 0.8125em; /* 13/16 = 0.8125 */
 }
