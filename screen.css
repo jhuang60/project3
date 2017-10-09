@@ -1,48 +1,118 @@
-/* Begin site style below */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body,.stylelint{line-height:inherit}ol,ul,.stylelint{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
 
 /* Base style */
 
-html{
-  font-size: 0.94444444444em; /* 17/18 = 0.94444444444 */
-  line-height: 1.44444444444em; /* 26/18 = 1.44444444444 */
+html {
+  font-size: 1.1875em; /* 19/16 = 1.1875 */
+  line-height: 1.38888888889em; /* 25/16 = 1.38888888889*/
+  font-family: "Times New Roman", Times, serif;
 }
-body{
-  padding-top: 3.88888888889em; /* 70/18 = 3.88888888889 */
-  padding-left: 1.66666666667em; /* 30/18 = 1.66666666667 */
-  padding-right: 1.66666666667em; /* 30/18 = 1.66666666667 */
+
+body {
+  padding-top: 5.625em; /* 90/16 = 5 */
+  padding-left: 4.375em; /* 70/16 = */
+  padding-right: 4.375em;
 }
+
+h1,
+h2,
+h3,
+p,
+ul {
+  padding-bottom: 0.9375em; /* 15/16 = 1.25 */
+}
+
+h1 {
+  font-size: 2.8125em; /* 45/16 = 2.8125 */
+}
+
+h2 {
+  font-size: 1.5625em; /* 25/16 = 1.5625 */
+}
+
+li li:last-child {
+  padding-bottom: 0.9375em; /* 15/16 = 0.9375*/
+}
+
+li li:first-child {
+  padding-top: 0.9375em; /* 15/16 = 0.9375*/
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li {
+  padding-left: 1.125em; /* 18/16 = 1.125*/
+}
+
+li ul {
+  list-style-type: square;
+}
+
 
 /* Setting type with a modular scale */
 
 /* Responsive media */
 img {
-display: block;
-max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
+
 /* Layout style */
+
 #menu {
   position: absolute;
-  width: 100%;
   background-color: yellow;
+  width: 100%;
   top: 0;
   left: 0;
 }
-#menu li{
+
+#menu li {
   float: left;
   width: 33.3333333333%;
   background-color: orange;
 }
+
 #menu a {
   text-decoration: none; /* get rid of underlines */
   display: block;
   text-align: center;
   width: 100%;
+  color: white;
+  padding-top: 0.8125em; /* 13/16 = 0.8125 */
+  padding-bottom: 0.8125em; /* 13/16 = 0.8125 */
 }
 
 /* Modular style */
 #menu ul,
-#menu li{
+#menu li {
   list-style-type: none; /* get rid of bullet points*/
+  padding: 0;
 }
 
 /* State styles */
+
+@media screen and (min-width: 375px){
+
+
+}
+
+@media screen and (min-width: 768px){
+
+
+}
+
+@media screen and (min-width: 1224px){
+
+
+}
