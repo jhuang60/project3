@@ -77,6 +77,7 @@ footer {
 }
 
 
+
 /* Layout style */
 
 #menu {
@@ -135,6 +136,17 @@ img {
 }
 
 @media screen and (min-width: 640px) {
+  .flexbox #pictures{
+    display: flex;
+    flex-flow: row wrap;
+    float: none;
+  }
+  #one,
+  #two{
+    flex: 50%;
+    height: 50%;
+    width: 50%;
+  }
 
 }
 
