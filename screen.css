@@ -128,29 +128,27 @@ img {
 
 /* State styles */
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px){
   body {
     padding-right: 11.733333333%; /* 44 / 375 = 0.10476190476 */
     padding-left: 11.733333333%; /* 44 / 375 = 0.10476190476 */
   }
 }
 
-@media screen and (min-width: 640px) {
-  .flexbox #pictures{
+@media screen and (min-width: 640px){
+  .flexbox #picturecontainer{
     display: flex;
     flex-flow: row wrap;
-    float: none;
   }
-  #one,
-  #two{
+  #two,
+  #three{
     flex: 50%;
     height: 50%;
     width: 50%;
-  }
-
+}
 }
 
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 990px){
   body {
     padding-right: 9.595959595em; /* 95/990 = 0.09595959595*/
     padding-left: 9.595959595em;
