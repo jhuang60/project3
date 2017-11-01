@@ -127,16 +127,21 @@ img {
 
 /* State styles */
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 375px) {
   body {
-    padding-right: 10.476190476%; /* 44 / 420 = 0.10476190476 */
-    padding-left: 10.476190476%; /* 44 / 420 = 0.10476190476 */
+    padding-right: 11.733333333%; /* 44 / 375 = 0.10476190476 */
+    padding-left: 11.733333333%; /* 44 / 375 = 0.10476190476 */
   }
+}
 
-@media screen and (min-width: ) {
+@media screen and (min-width: 640px) {
+
+}
+
+@media screen and (min-width: 990px) {
   body {
-    padding-right: 10.476190476%;
-    padding-left: 10.476190476%;
+    padding-right: 9.595959595em; /* 95/990 = 0.09595959595*/
+    padding-left: 9.595959595em;
   }
 
 }
