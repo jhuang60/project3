@@ -145,11 +145,21 @@ img {
     flex: 1 50%;
 
 }
+}
 
 @media screen and (min-width: 990px){
   body {
     padding-right: 9.595959595em; /* 95/990 = 0.09595959595*/
     padding-left: 9.595959595em;
   }
+  .flexbox #picturecontainer{
+    display: flex;
+    flex-flow: row wrap;
+  }
+.flexbox #two,
+.flexbox #three{
+    flex: 1 50%;
+
+}
 
 }
