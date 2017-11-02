@@ -47,6 +47,10 @@ h3 {
   line-height: 1.3em; /* 26/20=1.3 */
 }
 
+#maintext{
+  padding-bottom: 1.3em;
+}
+
 
 ul {
   list-style-type: circle;
@@ -145,6 +149,13 @@ img {
     flex: 1 50%;
 
 }
+.flexbox #chi,
+.flexbox #mex,
+.flexbox #usa{
+    flex: 1 25%;
+
+}
+
 }
 
 @media screen and (min-width: 990px){
@@ -152,14 +163,5 @@ img {
     padding-right: 9.595959595em; /* 95/990 = 0.09595959595*/
     padding-left: 9.595959595em;
   }
-  .flexbox #picturecontainer{
-    display: flex;
-    flex-flow: row wrap;
-  }
-.flexbox #two,
-.flexbox #three{
-    flex: 1 50%;
-
-}
 
 }
