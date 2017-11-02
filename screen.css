@@ -135,16 +135,19 @@ img {
 @media screen and (min-width: 640px) {
   .flexbox #picturecontainer {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
   }
   .flexbox #two,
   .flexbox #three {
     flex: 1 50%;
   }
+  .flexbox #pictitle{
+    flex: 1 100%;
+  }
   .flexbox #chi,
   .flexbox #mex,
   .flexbox #usa {
-    flex: 1 25%;
+    flex: 1 33.3333333333%;
   }
 }
 
