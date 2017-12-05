@@ -156,6 +156,10 @@ img {
 }
 
 @media screen and (min-width: 1400px) {
+  body {
+    padding-right: 14.285714285em; /* 200/1400 = 0.14285714285*/
+    padding-left: 14.285714285em;
+  }
   .flexbox #aboutmecontent{
     display: flex;
     flex-flow: wrap;
