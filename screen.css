@@ -68,6 +68,7 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
+  clear: both;
 }
 
 /* Layout style */
@@ -128,6 +129,23 @@ img {
 }
 
 @media screen and (min-width: 640px) {
+  #two,
+  #three {
+    width: 50%;
+    float: left;
+  }
+
+  #chi,
+  #mex,
+  #usa {
+    width: 33.3333333333%;
+    float:left;
+  }
+
+  footer {
+    clear: both;
+  }
+
   .flexbox #picturecontainer,.flexbox #foodandtravel,
   .flexbox #hobbies, .flexbox #travelpics {
     display: flex;
@@ -146,6 +164,7 @@ img {
   .flexbox #usa {
     flex: 1 33.3333333333%;
   }
+
 }
 
 @media screen and (min-width: 990px) {
@@ -160,20 +179,37 @@ img {
     padding-right: 14.285714285em; /* 200/1400 = 0.14285714285*/
     padding-left: 14.285714285em;
   }
-  .flexbox #aboutmecontent{
+  #foodandtravel {
+    margin-left: 10%;
+    width: 40%;
+    float: left;
+  }
+
+  #hobbies {
+    width: 40%;
+    float: left;
+   }
+
+   #two,
+   #three {
+     width: 50%;
+     float: left;
+   }
+
+  .flexbox #aboutmecontent {
     display: flex;
     flex-flow: wrap;
   }
-  .flexbox #foodandtravel{
+  .flexbox #foodandtravel {
     margin-left: 10%;
     flex: 1 40%;
   }
-  .flexbox #hobbies{
+  .flexbox #hobbies {
     flex: 1 40%;
   }
 
   .flexbox #two,
-  .flexbox #three{
+  .flexbox #three {
     flex: 1 50%;
   }
 
