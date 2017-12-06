@@ -58,8 +58,8 @@
             <p>If you have any question please submit the form below: </p>
           </li>
           <li>
-            <label for="nameinput"> Please enter your name: </label>
-            <input type="text" name="name" id="nameinput"/>
+            <label for="nameinput" id="namein"> Please enter your name: </label>
+            <input type="text" name="name" id="nameinput" />
           </li>
           <li>
             <label for="emailinput"> Please enter your email: </label>
@@ -70,10 +70,13 @@
             <textarea name="question" id="questioninput"></textarea>
           </li>
           <li>
-            <input type="submit" name="submit" value="submit" id="submit"/>
+            <input type="submit" name="submit" value="submit" id="submit">
             <audio src="media/pop.mp3" id="popsound" controls="controls">
               Sorry your browser does not support the audio element
             </audio>
+          </li>
+          <li>
+            <p id="status"></p>
           </li>
         </ol>
       </form>
