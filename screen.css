@@ -78,17 +78,17 @@ footer {
 /* Layout style */
 #nameinput,
 #emailinput {
-  width: 25em; /* 500/20=25 */
-  height: 2.5em; /* 50/20= 2.5 */
+  width: 50%;
+  height: 1.75em; /* 35/20= 1.75 */
 }
 
 #questioninput {
-  width: 50em; /* 1000/20= 50 */
-  height: 25em; /* 500/20=25 */
+  width: 70%;
+  height: 12.5em; /* 250/20=12.5 */
 }
 
 #submitForm {
-  width: 12.5em; /* 250/20= 12.5*/
+  width: 30%; 
   height: 2em; /* 40/20= 2 */
 }
 
@@ -196,6 +196,19 @@ img {
     padding-right: 9.595959595em; /* 95/990 = 0.09595959595*/
     padding-left: 9.595959595em;
   }
+
+  #nameinput,
+  #emailinput {
+    height: 2.25em; /* 45/20= 2.25 */
+  }
+
+  #questioninput {
+    height: 15em; /* 300/20=15 */
+  }
+
+  #submitForm {
+    height: 3em; /* 60/20= 3 */
+  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -203,22 +216,22 @@ img {
     padding-right: 14.285714285em; /* 200/1400 = 0.14285714285*/
     padding-left: 14.285714285em;
   }
-  #foodandtravel {
-    margin-left: 10%;
+
+  #nameinput,
+  #emailinput {
     width: 40%;
-    float: left;
+    height: 2.5em; /* 50/20= 2.5 */
   }
 
-  #hobbies {
-    width: 40%;
-    float: left;
-   }
+  #questioninput {
+    width: 60%;
+    height: 17.5em; /* 350/20=17.5 */
+  }
 
-   #two,
-   #three {
-     width: 50%;
-     float: left;
-   }
+  #submitForm {
+    width: 20%;
+    height: 3.5em; /* 70/20= 3.5 */
+  }
 
   .flexbox #aboutmecontent {
     display: flex;
