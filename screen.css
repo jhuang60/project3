@@ -171,7 +171,7 @@ img {
     padding-right: 11.733333333%; /* 44 / 375 = 0.10476190476 */
     padding-left: 11.733333333%; /* 44 / 375 = 0.10476190476 */
   }
-  input, #submit{
+  input, textarea, #submit{
     width: 100%;
   }
 }
