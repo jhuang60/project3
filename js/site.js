@@ -1,7 +1,6 @@
 $.noConflict();
 
 (function($){
-
   $("#popsound").remove();
 
   $(document).ready(function(){
@@ -11,11 +10,7 @@ $.noConflict();
     }
 
    $("#submitForm").on("click" , function(){
-    if (name == '' || email == '' || question == '') {
-      alert("Please fill in all the fields");
-    }else {
-      messagesubmit();
-   }
+     messagesubmit();
     });
 
   });
@@ -28,8 +23,12 @@ $.noConflict();
   var email = $('#emailinput').val();
   var question = $('#questioninput').val();
 
+  if (name == '' || email == '' || question == '') {
+           alert("Please fill in all the fields");
+           return false;
+  }
+
   console.log("form submitted", name, email, question);
-  producePrompt ("Correct");
 
   });
 
