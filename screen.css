@@ -110,18 +110,20 @@ footer {
   padding: 0;
 }
 
+input, textarea, #submit{
+  width: 100%;
+}
+
 textarea {
   box-sizing: border-box;
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
-  width: 60%;
   padding: 3em 1em; /* 60/20=3 20/20=1 */
   margin: .4em 0; /*8/20=.4*/
   border: 0;
 }
 input[type="submit"] {
-  width: 15%;
   padding: 12px 20px;
   margin: 0.6em 1em; /*12/20=.6 20/20=1*/
 }
@@ -131,7 +133,6 @@ input{
   font-size: inherit;
   font-family: inherit;
   line-height: inherit;
-  width: 50%;
   padding: 0.6em 1em; /*12/20=.6 20/20=1*/
   margin: .4em 0; /*8/20=.4*/
   border: 0;
@@ -171,12 +172,21 @@ img {
     padding-right: 11.733333333%; /* 44 / 375 = 0.10476190476 */
     padding-left: 11.733333333%; /* 44 / 375 = 0.10476190476 */
   }
-  input, textarea, #submit{
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 640px) {
+  textarea {
+    width: 60%;
+  }
+  
+  #submit {
+    width: 15%;
+  }
+
+  input{
+    width: 50%;
+  }
+
   #two,
   #three {
     width: 50%;
