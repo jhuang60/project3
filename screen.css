@@ -76,28 +76,14 @@ footer {
 }
 
 /* Layout style */
-#nameinput,
-#emailinput {
-  width: 50%;
-  height: 1.75em; /* 35/20= 1.75 */
-}
 
-#questioninput {
-  width: 70%;
-  height: 12.5em; /* 250/20=12.5 */
-}
-
-#submitForm {
-  width: 30%;
-  height: 2em; /* 40/20= 2 */
-}
 
 #menu {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
-  padding-bottom: 0.55555555555em; /* 10/18 0.55555555555 */
+  padding-bottom: 0.5em; /* 10/20 0.5 */
   background-color: #c2d4d8;
 }
 
@@ -113,8 +99,8 @@ footer {
   text-align: center;
   width: 100%;
   color: black;
-  padding-top: 0.65em; /* 13/18 = 0.72222222222 */
-  padding-bottom: 0.65em; /* 13/18 = 0.72222222222 */
+  padding-top: 0.65em; /* 13/20 = 0.65 */
+  padding-bottom: 0.65em; /* 13/20 = 0.65 */
 }
 
 /* Modular style */
@@ -124,6 +110,41 @@ footer {
   padding: 0;
 }
 
+textarea {
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  width: 60%;
+  padding: 3em 1em; /* 60/20=3 20/20=1 */
+  margin: .4em 0; /*8/20=.4*/
+  border: 0;
+}
+input[type="submit"] {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 0.6em 1em; /*12/20=.6 20/20=1*/
+}
+
+input{
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  width: 50%;
+  padding: 0.6em 1em; /*12/20=.6 20/20=1*/
+  margin: .4em 0; /*8/20=.4*/
+  border: 0;
+}
+
+form li{
+  list-style-type: none;
+}
+
+input,
+textarea{
+  background-color: #dbe9d8;
+}
 
 /* Responsive media */
 label {
@@ -199,18 +220,7 @@ img {
     padding-left: 9.595959595em;
   }
 
-  #nameinput,
-  #emailinput {
-    height: 2.25em; /* 45/20= 2.25 */
-  }
 
-  #questioninput {
-    height: 15em; /* 300/20=15 */
-  }
-
-  #submitForm {
-    height: 3em; /* 60/20= 3 */
-  }
 }
 
 @media screen and (min-width: 1400px) {
@@ -219,21 +229,6 @@ img {
     padding-left: 14.285714285em;
   }
 
-  #nameinput,
-  #emailinput {
-    width: 40%;
-    height: 2.5em; /* 50/20= 2.5 */
-  }
-
-  #questioninput {
-    width: 60%;
-    height: 17.5em; /* 350/20=17.5 */
-  }
-
-  #submitForm {
-    width: 20%;
-    height: 3.5em; /* 70/20= 3.5 */
-  }
 
   #foodandtravel {
     width: 40%;
