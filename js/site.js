@@ -11,7 +11,11 @@ $.noConflict();
     }
 
    $("#submitForm").on("click" , function(){
-   messagesubmit();
+    if (name == '' || email == '' || question == '') {
+      alert("Please fill in all the fields");
+    }else {
+      messagesubmit();
+   }
     });
 
   });
@@ -23,11 +27,6 @@ $.noConflict();
   var name = $('#nameinput').val();
   var email = $('#emailinput').val();
   var question = $('#questioninput').val();
-
-  if (name == '' || email == '' || question == '') {
-           alert("Please fill in all the fields");
-           return false;
-       }
 
   console.log("form submitted", name, email, question);
   producePrompt ("Correct");
