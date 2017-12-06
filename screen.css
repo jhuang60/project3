@@ -235,6 +235,21 @@ img {
     height: 3.5em; /* 70/20= 3.5 */
   }
 
+  #foodandtravel {
+    width: 40%;
+  }
+
+  #hobbies {
+    width: 40%;
+    margin-right: 10%;
+    float: left;
+  }
+
+  #two,
+  #three {
+    width: 50%;
+  }
+
   .flexbox #aboutmecontent {
     display: flex;
     flex-flow: wrap;
