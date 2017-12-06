@@ -255,11 +255,11 @@ img {
     flex-flow: wrap;
   }
   .flexbox #foodandtravel {
-    margin-left: 10%;
     flex: 1 40%;
   }
   .flexbox #hobbies {
     flex: 1 40%;
+    margin-right: 10%;
   }
 
   .flexbox #two,
