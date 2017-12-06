@@ -62,7 +62,7 @@ li ul {
   list-style-type: square;
 }
 
-article{
+article {
   padding-bottom: 1em; /* 20/20 = 1*/
 }
 
@@ -88,7 +88,7 @@ footer {
 }
 
 #submitForm {
-  width: 30%; 
+  width: 30%;
   height: 2em; /* 40/20= 2 */
 }
 
@@ -163,15 +163,17 @@ img {
   #mex,
   #usa {
     width: 33.3333333333%;
-    float:left;
+    float: left;
   }
 
   footer {
     clear: both;
   }
 
-  .flexbox #picturecontainer,.flexbox #foodandtravel,
-  .flexbox #hobbies, .flexbox #travelpics {
+  .flexbox #picturecontainer,
+  .flexbox #foodandtravel,
+  .flexbox #hobbies,
+  .flexbox #travelpics {
     display: flex;
     flex-flow: wrap;
   }
