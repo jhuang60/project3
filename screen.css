@@ -182,7 +182,7 @@ img {
   .flexbox #three {
     flex: 1 50%;
   }
-  .flexbox #pictitle {
+  .flexbox .pictitle {
     flex: 1 100%;
   }
   .flexbox #chi,
