@@ -19,15 +19,18 @@ $.noConflict();
     var name = $('#nameinput').val();
     var email = $('#emailinput').val();
     var question = $('#questioninput').val();
+    var status = document.getElementById("status");
+    var fill = "Please fill in all the fields";
+    var done = "Form submitted";
 
     e.preventDefault();
 
     if (name === '' || email === '' || question === '') {
-      alert("Please fill in all the fields");
-      return false;
-    }else{
+      status.textContent = fill;
+
+    } else{
       console.log("form submitted", name, email, question);
-      alert("Form submited");
+      status.textContent = done;
     }
 
   });
