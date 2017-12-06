@@ -9,26 +9,26 @@ $.noConflict();
       popsound.play();
     }
 
-   $("#submitForm").on("click" , function(){
-     messagesubmit();
+    $("#submit").on("click", function(){
+      messagesubmit();
     });
 
   });
 
   $('#questionform').on('submit', function(e){
+    var name = $('#nameinput').val();
+    var email = $('#emailinput').val();
+    var question = $('#questioninput').val();
 
-  e.preventDefault();
+    e.preventDefault();
 
-  var name = $('#nameinput').val();
-  var email = $('#emailinput').val();
-  var question = $('#questioninput').val();
-
-  if (name == '' || email == '' || question == '') {
-           alert("Please fill in all the fields");
-           return false;
-  }
-
-  console.log("form submitted", name, email, question);
+    if (name === '' || email === '' || question === '') {
+      alert("Please fill in all the fields");
+      return false;
+    }else{
+      console.log("form submitted", name, email, question);
+      alert("Form submited");
+    }
 
   });
 
