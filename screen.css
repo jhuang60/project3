@@ -29,6 +29,10 @@ ul {
   padding-top: 1em; /* 20/20 = 1*/
 }
 
+p {
+  padding-bottom: 1em;/* 20/20 = 1*/
+}
+
 h1 {
   font-size: 1.8em; /* 36/20=1.8 */
   line-height: 0.5555em; /* 20/36=0.5555 */
@@ -72,6 +76,21 @@ footer {
 }
 
 /* Layout style */
+#nameinput,
+#emailinput {
+  width: 25em; /* 500/20=25 */
+  height: 2.5em; /* 50/20= 2.5 */
+}
+
+#questioninput {
+  width: 50em; /* 1000/20= 50 */
+  height: 25em; /* 500/20=25 */
+}
+
+#submitForm {
+  width: 12.5em; /* 250/20= 12.5*/
+  height: 2em; /* 40/20= 2 */
+}
 
 #menu {
   position: absolute;
@@ -104,6 +123,7 @@ footer {
   list-style-type: none; /* get rid of bullet points*/
   padding: 0;
 }
+
 
 /* Responsive media */
 label {
