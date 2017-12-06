@@ -27,10 +27,12 @@ $.noConflict();
 
     if (name === '' || email === '' || question === '') {
       status.textContent = fill;
+      document.getElementById("status").style.color = 'red';
 
     } else{
       console.log("form submitted", name, email, question);
       status.textContent = done;
+      document.getElementById("status").style.color = 'green';
     }
 
   });
