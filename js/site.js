@@ -4,9 +4,17 @@ $.noConflict();
   var track = true;
   var numbers = new Array(7);
   var tellnumber = document.getElementById("tellnumber");
+  var tellfortune = document.getElementById("tellfortune");
+  var item = " ";
   var i = 0;
   var luckynum = " ";
-
+  var arrrayoffortunes = ["Today is your lucky day. Go get that lottery ticket!",
+    "Look behind!", "oops, wrong cookie", "This fortune is not good. Try another.", "meh",
+    "Many fortune cookies contain no fortune... Not this one though!",
+    "I know you are hungry", "JUST DO IT!", "Javascript, javascript everywhere",
+    "Am I hired yet?", "You will find your fortune in another cookie", "Run!",
+    "Senpai notice me!", "You are probably thinking that you can come up with better fortunes.",
+    "Despide of all the negative fortunes covfefe"];
 
 
   $("#popsound").remove();
@@ -33,6 +41,13 @@ $.noConflict();
     tellnumber.textContent = "Your lucky numbers are: " + numbers.toString();
   }
 
+  function fortunes(){
+
+    if (track === true){
+      item = arrrayoffortunes[Math.floor(Math.random()*arrrayoffortunes.length)];
+    }
+    tellfortune.textContent = item;
+  }
 
   function cookieimage() {
 
