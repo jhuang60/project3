@@ -1,6 +1,8 @@
 $.noConflict();
 
 (function($){
+  var track = true;
+
 
   $("#popsound").remove();
 
@@ -15,6 +17,23 @@ $.noConflict();
     });
 
   });
+
+  function cookieimage() {
+
+    var image = document.getElementById("myimage");
+    if(track === true){
+      image.src = "../images/open.png";
+      luckynumbers();
+      fortunes();
+      track = false;}
+    else {image.src = "../images/close.png";
+      tellnumber.textContent = "";
+      tellfortune.textContent = "";
+      track = true;
+    }
+
+  }
+
 
 
   $('#questionform').on('submit', function(e){
