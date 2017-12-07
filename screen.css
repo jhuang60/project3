@@ -119,10 +119,7 @@ textarea {
   margin: .4em 0; /*8/20=.4*/
   border: 0;
 }
-input[type="submit"] {
-  padding: 12px 20px;
-  margin: 0.6em 1em; /*12/20=.6 20/20=1*/
-}
+
 
 input{
   box-sizing: border-box;
@@ -153,6 +150,8 @@ img {
   max-width: 100%;
 }
 
+
+
 #menu a:hover {
   background-color: #c2d4d8;
 }
@@ -182,17 +181,21 @@ img {
 }
 
 @media screen and (min-width: 640px) {
+
+
   textarea {
-    width: 60%;
+    width: 90%;
   }
 
   #submit {
-    width: 15%;
+    width: 25%;
   }
 
   input{
-    width: 50%;
+    width: 70%;
   }
+
+
 
   #two,
   #three {
@@ -214,10 +217,12 @@ img {
   .flexbox #picturecontainer,
   .flexbox #foodandtravel,
   .flexbox #hobbies,
-  .flexbox #travelpics {
+  .flexbox #travelpics,
+ {
     display: flex;
     flex-flow: wrap;
   }
+
 
   .flexbox #two,
   .flexbox #three {
