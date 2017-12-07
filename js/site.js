@@ -18,6 +18,7 @@ $.noConflict();
 
   });
 
+
   function cookieimage() {
 
     var image = document.getElementById("myimage");
@@ -34,6 +35,9 @@ $.noConflict();
 
   }
 
+  $("#myimage").on("click", function(){
+    cookieimage();
+  } );
 
 
   $('#questionform').on('submit', function(e){
