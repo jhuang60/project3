@@ -13,7 +13,7 @@ $.noConflict();
     "Many fortune cookies contain no fortune... Not this one though!",
     "I know you are hungry", "JUST DO IT!", "Javascript, javascript everywhere",
     "Am I hired yet?", "You will find your fortune in another cookie", "Run!",
-    "Senpai notice me!", "You are probably thinking that you can come up with better fortunes.",
+    "OMG! senpai noticed you!", "You are probably thinking that you can come up with better fortunes.",
     "Despide of all the negative fortunes covfefe"];
 
 
