@@ -150,7 +150,13 @@ img {
   max-width: 100%;
 }
 
+#myimage{
+  max-width: 100%;
+}
 
+#clickcookie{
+  max-width: 100%;
+}
 
 #menu a:hover {
   background-color: #c2d4d8;
