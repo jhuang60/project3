@@ -2,6 +2,11 @@ $.noConflict();
 
 (function($){
   var track = true;
+  var numbers = new Array(7);
+  var tellnumber = document.getElementById("tellnumber");
+  var i = 0;
+  var luckynum = " ";
+
 
 
   $("#popsound").remove();
@@ -17,6 +22,16 @@ $.noConflict();
     });
 
   });
+
+  function luckynumbers() {
+    if (track === true){
+      for (i=0; i<numbers.length; i++) {
+        luckynum = " " + Math.floor(Math.random()*70);
+        numbers[i] = luckynum;
+      }
+    }
+    tellnumber.textContent = "Your lucky numbers are: " + numbers.toString();
+  }
 
 
   function cookieimage() {
