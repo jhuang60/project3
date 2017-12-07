@@ -161,6 +161,12 @@ img {
   background-color: #c2d4d8;
 }
 
+#submit:hover {
+  color:white;
+  background:#c2d4d8;
+}
+
+
 /* State styles */
 
 @media screen and (min-width: 375px) {
@@ -172,7 +178,7 @@ img {
   input, textarea, #submit{
     width: 100%;
   }
-  
+
 }
 
 @media screen and (min-width: 640px) {
