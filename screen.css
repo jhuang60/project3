@@ -66,6 +66,11 @@ article {
   padding-bottom: 1em; /* 20/20 = 1*/
 }
 
+#tellfortune,
+#tellnumber{
+  text-align: center;
+}
+
 footer {
   background-color: #dbe9d8;
   text-align: center;
@@ -147,15 +152,15 @@ label {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 #myimage{
-  max-width: 100%;
+  width: 100%;
 }
 
 #clickcookie{
-  max-width: 100%;
+  width: 100%;
 }
 
 #menu a:hover {
@@ -187,6 +192,7 @@ img {
 }
 
 @media screen and (min-width: 640px) {
+
   #form{
     width: 60%;
     float: left;
@@ -205,10 +211,11 @@ img {
   }
 
   #ccookie{
-    margin-top: 4em; /* 80/20 = 4 */
+    margin-top: 4em;  /*80/20 = 4 */
     width: 40%;
     float: right;
   }
+
 
   #two,
   #three {
@@ -235,7 +242,6 @@ img {
     display: flex;
     flex-flow: wrap;
   }
-
 
   .flexbox #two,
   .flexbox #three {

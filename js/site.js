@@ -46,7 +46,7 @@ $.noConflict();
     if (track === true){
       item = arrrayoffortunes[Math.floor(Math.random()*arrrayoffortunes.length)];
     }
-    tellfortune.textContent = item;
+    tellfortune.textContent = "Your fortune is: " + item;
   }
 
   function cookieimage() {
