@@ -1,6 +1,7 @@
 $.noConflict();
 
 (function($){
+
   $("#popsound").remove();
 
   $(document).ready(function(){
@@ -14,6 +15,7 @@ $.noConflict();
     });
 
   });
+
 
   $('#questionform').on('submit', function(e){
     var name = $('#nameinput').val();
